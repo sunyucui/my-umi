@@ -1,0 +1,33 @@
+@font-size: 24px;
+
+// 定义函数
+.content() {
+  .baseinfo {
+    // 使用变量
+    font-size: @font-size;
+    color: green;
+  }
+  .maininfor {
+    font-size: 16px;
+    color: black;
+  }
+}
+.header {
+  // 嵌套层级
+  color: red;
+  background-color: bisque;
+  .content {
+    .content.baseinfo();
+  }
+  .main {
+    text-align: center;
+    .content.maininfor();
+  }
+  //   使用伪元素 &表示当前父级
+  &:after {
+    content: 'after';
+  }
+  &:before {
+    content: 'before';
+  }
+}

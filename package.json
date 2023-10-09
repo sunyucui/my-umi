@@ -20,7 +20,10 @@
     ]
   },
   "dependencies": {
+    "@ant-design/pro-components": "^2.6.16",
     "@ant-design/pro-layout": "^6.5.0",
+    "antd": "^4.24.13",
+    "dayjs": "^1.11.9",
     "react": "17.x",
     "react-dom": "17.x",
     "umi": "^3.5.41"
